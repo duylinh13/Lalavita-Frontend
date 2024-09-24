@@ -18,7 +18,7 @@ const Section1 = () => {
   return (
     <section
       id="section01"
-      className="flex w-[1920px] h-[975px] bg-white pl-[160px]"
+      className="flex w-[1920px] h-[970px] bg-white pl-[160px]"
     >
       {/* Left side: 60% for text content */}
       <div className="w-[40%] flex flex-col justify-start">
