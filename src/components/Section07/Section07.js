@@ -33,7 +33,7 @@ const Section7 = () => {
             <span className="text-4xl leading-[48px] text-white underline flex gap-2">
               Youtube
               <img
-                src={youtubeIcon.src}
+                src={youtubeIcon}
                 alt="sns-youtube"
                 width={37}
                 height={37}
@@ -44,7 +44,7 @@ const Section7 = () => {
             <span className="text-4xl leading-[48px] text-white underline flex gap-2">
               Instagram
               <img
-                src={instagramIcon.src}
+                src={instagramIcon}
                 alt="sns-instagram"
                 width={37}
                 height={37}
