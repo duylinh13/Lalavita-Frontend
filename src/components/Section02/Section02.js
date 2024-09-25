@@ -33,7 +33,7 @@ const Section2 = () => {
         {" "}
         {/* Thêm overflow-hidden ở đây */}
         {/* Card 1 */}
-        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-white w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform hover:scale-105">
+        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-white w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform ">
           <img
             src={mainIllustration}
             alt="Main Illustration"
@@ -50,7 +50,7 @@ const Section2 = () => {
           </span>
         </div>
         {/* Card 2 */}
-        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-[#42c0cc] w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform hover:scale-105">
+        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-[#42c0cc] w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform ">
           <img
             src={illust2}
             alt="Illustration 2"
@@ -67,7 +67,7 @@ const Section2 = () => {
           </span>
         </div>
         {/* Card 3 */}
-        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-white w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform hover:scale-105">
+        <div className="relative flex flex-col items-start justify-start h-auto p-[30px] rounded-[20px] shadow-lg bg-white w-full md:w-1/3 mx-2 mb-4 md:mb-10 transition-transform duration-300 transform ">
           <img
             src={illust3}
             alt="Illustration 3"
