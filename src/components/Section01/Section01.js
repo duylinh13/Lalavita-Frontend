@@ -17,7 +17,7 @@ const Section1 = () => {
 
   return (
     <section
-      id="section01"
+      id="section1"
       className="flex w-[1920px] h-[970px] bg-white pl-[160px]"
     >
       {/* Left side: 60% for text content */}

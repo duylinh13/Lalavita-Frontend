@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // App.js
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
@@ -17,32 +18,32 @@ function App() {
   const handleScroll = () => {
     const scrollY = window.scrollY;
 
-    const section2 = document.getElementById("section2");
-    const section3 = document.getElementById("section3");
-    const section4 = document.getElementById("section4");
-    const section5 = document.getElementById("section5");
-    const section6 = document.getElementById("section6");
-    const section7 = document.getElementById("section7");
+    const sections = [
+      document.getElementById("section1"),
+      document.getElementById("section2"),
+      document.getElementById("section3"),
+      document.getElementById("section4"),
+      document.getElementById("section5"),
+      document.getElementById("section6"),
+      document.getElementById("section7"),
+    ];
 
-    const section2Top = section2 ? section2.offsetTop : 0;
-    const section3Top = section3 ? section3.offsetTop : 0;
-    const section4Top = section4 ? section4.offsetTop : 0;
-    const section5Top = section5 ? section5.offsetTop : 0;
-    const section6Top = section6 ? section6.offsetTop : 0;
-    const section7Top = section7 ? section7.offsetTop : 0;
+    const sectionTops = sections.map((section) =>
+      section ? section.offsetTop : 0
+    );
 
     // Thay đổi màu nền của header dựa trên vị trí cuộn
-    if (scrollY >= section7Top) {
+    if (scrollY >= sectionTops[6]) {
       setHeaderBg("bg-cover bg-center bg-[url('./assets/images/image.png')]");
-    } else if (scrollY >= section6Top) {
+    } else if (scrollY >= sectionTops[5]) {
       setHeaderBg("bg-[#f7d6e9]");
-    } else if (scrollY >= section5Top) {
+    } else if (scrollY >= sectionTops[4]) {
       setHeaderBg("bg-white");
-    } else if (scrollY >= section4Top) {
+    } else if (scrollY >= sectionTops[3]) {
       setHeaderBg("bg-[#fed614]"); // Màu vàng cho bên trái
-    } else if (scrollY >= section3Top) {
+    } else if (scrollY >= sectionTops[2]) {
       setHeaderBg("bg-white");
-    } else if (scrollY >= section2Top) {
+    } else if (scrollY >= sectionTops[1]) {
       setHeaderBg("bg-[#fed614]");
     } else {
       setHeaderBg("bg-white");
@@ -61,10 +62,9 @@ function App() {
     setActiveIndex(index);
     const section = document.getElementById(`section${index + 1}`);
     if (section) {
-      const sectionTop = section.getBoundingClientRect().top + window.scrollY; // Lấy vị trí của section
-      const offset = window.innerHeight / 2 - section.offsetHeight / 2; // Tính toán offset để đưa section vào giữa màn hình
+      const sectionTop = section.offsetTop; // Lấy vị trí của section
       window.scrollTo({
-        top: sectionTop - offset, // Cuộn đến vị trí mới
+        top: sectionTop, // Cuộn đến vị trí mới
         behavior: "smooth", // Cuộn mượt mà
       });
     }
