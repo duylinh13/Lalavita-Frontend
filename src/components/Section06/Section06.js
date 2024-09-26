@@ -71,14 +71,15 @@ const Section6 = () => {
   return (
     <div
       id="section6"
-      className="h-[1080px] flex flex-col items-center justify-center bg-[#f7d6e9] pt-[100px]"
+      className="h-full lg:h-[1080px] w-full flex flex-col items-center justify-center bg-[#f7d6e9] py-28 lg:pt-[100px]"
     >
       <span className="w-[300px] h-[36px] font-PretendardVariable text-[40px] font-semibold leading-[1.21] text-center text-[#222] mb-[47px]">
         라라비타 스토어
       </span>
 
       {/* Horizontal List */}
-      <div className="flex space-x-[40px] whitespace-nowrap overflow-x-auto">
+
+      <div className="flex lg:flex-row flex-col lg:space-x-10">
         {items.map((item, index) => (
           <button
             key={index}
@@ -95,7 +96,7 @@ const Section6 = () => {
       </div>
 
       {/* Flex Boxes */}
-      <div className="flex w-full justify-center mt-12 space-x-4">
+      <div className="flex flex-col lg:flex-row w-full justify-center items-center mt-12 gap-10 lg:gap-4">
         {Array(3)
           .fill(null)
           .map((_, boxIndex) => (

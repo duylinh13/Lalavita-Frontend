@@ -67,19 +67,19 @@ const Section5 = () => {
   return (
     <div
       id="section5"
-      className="h-[1080px] w-[1920px] flex flex-col justify-center items-center bg-white mt-8 px-8"
+      className="h-full lg:h-[1080px] w-full lg:w-[1920px] flex flex-col lg:justify-center lg:items-center bg-white lg:mt-8 px-8"
     >
-      <div className="w-full flex justify-between items-center mb-0 mt-[250px]">
-        <div className="text-start ml-[277px]">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-center mb-0 mt-[250px]">
+        <div className="text-start lg:ml-[277px]">
           <span className="block text-[#42c0cc] text-[18.5px] font-semibold mb-3">
             NMN의 효능, 효과
           </span>
-          <span className="block text-[#222] text-[40px] font-semibold leading-[1.21]">
+          <span className="block text-[#222] lg:text-[40px] font-semibold lg:leading-[1.21] text-3xl">
             NMN의 효능과 효과를 <br /> 한 눈에 살펴보세요.
           </span>
         </div>
 
-        <div className="flex justify-end items-center space-x-4 mr-[277px]">
+        <div className="flex justify-end items-center space-x-4 mt-10 lg:mt-0 lg:mr-[277px]">
           <button
             onClick={prevSlide}
             className="bg-white p-2 rounded-full shadow-md"
@@ -96,7 +96,7 @@ const Section5 = () => {
       </div>
 
       <div
-        className="flex w-full h-[800px] justify-center items-center overflow-hidden mx-auto"
+        className="flex w-full h-[800px] lg:justify-center lg:items-center overflow-hidden mx-auto"
         style={{ maxWidth: "1366px" }}
       >
         {getVisibleItems().map((item, index) => (

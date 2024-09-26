@@ -18,20 +18,20 @@ const Section1 = () => {
   return (
     <section
       id="section1"
-      className="flex w-[1920px] h-[970px] bg-white pl-[160px]"
+      className="lg:w-[1920px] w-full h-full lg:h-[970px] bg-white lg:pl-[160px] flex flex-col-reverse lg:flex-row"
     >
       {/* Left side: 60% for text content */}
-      <div className="w-[40%] flex flex-col justify-start">
+      <div className="w-full lg:w-[40%] flex flex-col justify-start">
         {/* Section title */}
-        <div className="mt-[80px] mr-[56px] mb-[39px] ml-[49px]">
-          <span className="text-[18.5px] font-semibold text-[#42c0cc] leading-[1.62]">
+        <div className="lg:mt-20 mt-0 mr-[56px] mb-6 lg:mb-[39px] ml-5 lg:ml-[49px]">
+          <span className="text-xl font-semibold text-[#42c0cc]">
             왜 라라비타 NMN일까요?
           </span>
         </div>
 
         {/* Main heading */}
-        <div className="mb-[39px] ml-[48px] ">
-          <span className="text-[55.5px] font-semibold text-[#222] leading-[1.31]">
+        <div className="mb-6 lg:mb-[39px] ml-5 lg:ml-[48px]">
+          <span className="lg:text-[55.5px] font-semibold text-[#222] lg:leading-[1.31] text-4xl">
             노화를 늦추고
             <br />
             건강을 지키는
@@ -41,8 +41,8 @@ const Section1 = () => {
         </div>
 
         {/* Description */}
-        <div className="ml-[49px] mr-[214px] mb-[49px]">
-          <span className="text-[18.5px] text-[#222] leading-[1.62]">
+        <div className="ml-5 lg:ml-[49px] lg:mr-[214px] mb-6 lg:mb-[49px]">
+          <span className="text-sm lg:text-xl text-[#222]">
             라라비타의 SUPERCONDRIA ®NMN은 전세계적으로 인증 받은
             <br />
             Uthever® NMN로 만든 고순도 제품입니다.
@@ -50,7 +50,7 @@ const Section1 = () => {
         </div>
 
         {/* First set of small images */}
-        <div className="flex gap-4 ml-[49px] mb-10">
+        <div className="flex gap-4 ml-5 lg:ml-[49px] mb-6 lg:mb-10">
           <img src={smallLetter1} alt="Small 1" className="w-[48px] h-[72px]" />
           <img src={smallLetter2} alt="Small 2" className="w-[63px] h-[74px]" />
           <img src={smallLetter3} alt="Small 3" className="w-[78px] h-[56px]" />
@@ -58,7 +58,7 @@ const Section1 = () => {
         </div>
 
         {/* Second set of small images */}
-        <div className="flex gap-4 ml-10">
+        <div className="flex gap-4 ml-5 lg:ml-10">
           <img src={confirmLogo1} alt="Logo 1" className="w-[42px] h-[42px]" />
           <img src={confirmLogo2} alt="Logo 2" className="w-[42px] h-[42px]" />
           <img src={confirmLogo3} alt="Logo 3" className="w-[50px] h-[41px]" />
@@ -74,7 +74,7 @@ const Section1 = () => {
           />
         </div>
 
-        <div className="pt-40 bg-white pl-6">
+        <div className="lg:pt-40 py-10 bg-white lg:pl-6">
           <img
             src={arrow} // Đường dẫn đến ảnh mũi tên
             alt="Down Arrow"
@@ -88,7 +88,7 @@ const Section1 = () => {
         <img
           src={mainIllust}
           alt="Main Illustration"
-          className="w-[700px] h-[768px] object-contain"
+          className="lg:w-[700px] lg:h-[768px] h-[200px] w-[400px] object-contain"
           style={{
             margin: "0", // Xóa margin nếu cần
             padding: "0", // Xóa padding nếu cần

@@ -57,21 +57,20 @@ function App() {
     };
   }, []);
 
-  // Hàm để cập nhật activeIndex khi nút radio được nhấn
   const handleRadioChange = (index) => {
     setActiveIndex(index);
     const section = document.getElementById(`section${index + 1}`);
     if (section) {
-      const sectionTop = section.offsetTop; // Lấy vị trí của section
+      const sectionTop = section.offsetTop;
       window.scrollTo({
-        top: sectionTop, // Cuộn đến vị trí mới
-        behavior: "smooth", // Cuộn mượt mà
+        top: sectionTop,
+        behavior: "smooth",
       });
     }
   };
 
   return (
-    <div className="w-[1920px]">
+    <div className="w-full">
       <Header bgClass={headerBg} />
 
       <main className="mt-40">
