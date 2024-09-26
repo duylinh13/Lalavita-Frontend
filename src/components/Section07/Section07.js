@@ -53,6 +53,11 @@ const Section7 = () => {
             </span>
           </div>
         </div>
+        <div className="flex justify-start  mt-[166px]">
+          <span className="w-full h-[18px] text-[20.5px] font-normal leading-[1.24] text-left text-white">
+            © 2022 Lalavita. All Rights Reserved
+          </span>
+        </div>
       </div>
     </div>
   );
