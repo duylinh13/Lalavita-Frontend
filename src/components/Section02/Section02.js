@@ -31,7 +31,7 @@ const Section2 = () => {
 
       <div className="three-items flex flex-col lg:flex-row justify-center mt-20 w-full px-4 md:px-52 gap-x-8">
         {/* Card 1 */}
-        <div className="relative flex flex-col items-start justify-start p-4 rounded-[20px] shadow-lg bg-white w-full sm:w-[60%] md:w-[30%] mx-0 mb-6 transition-transform duration-300 transform h-[400px] sm:h-[340px] md:h-[448px]">
+        <div className="relative flex flex-col items-start justify-start p-4 rounded-[20px] shadow-lg bg-white w-[90%] sm:w-[60%] md:w-[30%] mx-0 mb-6 transition-transform duration-300 transform h-[400px] sm:h-[340px] md:h-[448px]">
           <img
             src={mainIllustration}
             alt="Main Illustration"
